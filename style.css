@@ -1,13 +1,20 @@
 * {
   box-sizing: border-box;
 }
+body{
+  background-color: orange
+}
+img{
+  height:400px;
+  width: auto;
+}
 .menu {
   float:left;
   width:20%;
   text-align:center;
 }
-.menu a {
-  background-color:green;
+.menu a{
+  background-color:orange;
   padding:8px;
   margin-top:7px;
   display:block;
@@ -20,17 +27,36 @@
   padding:0 20px;
 }
 .right {
-  background-color:blue;
+  background-color:pink;
   float:left;
   width:20%;
   padding:15px;
   margin-top:7px;
   text-align:center;
 }
+.big{
+  width: 50%;
+  float: left;
+}
 
+.small{
+  width: 50%;
+  float: right;
+}
+.middle{
+  height: 150px;
+}
+div.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: pink;
+  border: 17px solid purple;
+}
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
-  .menu, .main, .right {
+  .menu, .main, .right, .big, .small, .middle, img{
     width:100%;
   }
-}
+} 
